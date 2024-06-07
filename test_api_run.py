@@ -14,6 +14,11 @@ MATCH_ID = ''
 # choose between puuid or match when calling the function
 """
 example usage: 
+for puuid:
+python3 test_api_run puuid
+
+for match:
+python3 test_api_run match
 """
 
 
