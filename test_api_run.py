@@ -1,4 +1,5 @@
 import requests
+import argparse
 
 # insert api key generated from the day
 API_KEY = ''
@@ -46,3 +47,10 @@ def matchvpuuid(method):
       return None
   match_details = get_match_details(PUUID)
   print(match_details)
+
+def main():
+  parser = argparse.ArgumentParser()
+  parser.add_argument("method", type = str, help="the method used for api data from methods api")
+  args = parser.parse_args()
+  m = args[0]
+  matchvpuuid(m)
